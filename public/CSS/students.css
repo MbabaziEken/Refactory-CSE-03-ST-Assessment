@@ -1,0 +1,60 @@
+body{
+    background-image: url(/assets/images/images\ \(6\).jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main{
+    margin: auto;
+    width: 80%;
+}
+
+h1{
+    background-color:HEX #03421f;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 0;
+    text-align: center;
+    color: blueviolet;
+
+}
+
+
+#content{
+        width: 100%;
+        padding: 10px;
+        background-color: beige;
+        box-sizing: border-box;
+        display: flex;
+}
+
+#left {
+      margin:0;
+      padding:0;
+     overflow: auto;
+     flex: 1;
+}
+
+#left img{
+        padding-top: 50px;
+         border-radius: 50px;
+         
+}
+
+#right{
+       margin: 0;
+       padding: 0;
+}
+
+#right img{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-radius: 35px;
+    width: 550px;
+    height: 550px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+
+
+

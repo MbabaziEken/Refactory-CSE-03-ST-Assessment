@@ -1,0 +1,55 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Students
+  link(rel='stylesheet' href='/assets/boostrap/css/boostrap.css')
+  link(rel='stylesheet' href='/css/students.css')
+#main
+  #container
+    #rol
+    h5 STUDENT APPLICATION FORM
+    form#submit.entry-form(action='/students' method='POST')
+            .input
+              label(for='first-name') First Name  
+              input#form-control.babbies-text-form(type='text' placeholder='FIRST NAME' name='firstName' id='firstname')
+            br
+            .form-group
+              label(for='last-name') Last Name
+              input#form-control.lastname-text-form(type='text' placeholder='' name='lastName' id='lastName')
+            br
+            .form-group
+              label(for='course')  
+              input#form-control.course-text-form(type='text' placeholder='course' name='course' id='course')
+            br
+            .form-group
+              label(for='entry-scheme')  Entry Scheme
+              input#form-control.entry-scheme-text-form(type='text' placeholder='Entry Scheme ' name='entryScheme' id='entryscheme')
+            br
+            .form-group
+              label(for="intake")  
+              input#form-control.intake-text-form(type='text' placeholder="intake" name='intake' id='intake')
+            br
+            .form-group
+              label(for="sponsorship")  
+              input#form-control.sponsorship-text-form(type='text' placeholder="sponsorship" name='sponsorship' id='sponsorship')
+            br
+            .form-check
+              input#flexRadioCheckedDisabled.form-check-input(type='radio' name='flexRadioDisabled' checked='' disabled='')
+              label.form-check-label(for='gender')
+              option(value='male') male
+              option(value='female') female
+            br
+            .form-group
+              label(for='date-of-birth')  
+              input#form-control.date-of-birth-text-form(type='text' placeholder='dateofbirth' name='dateOfBirth' id='dateofbirth')
+            br
+            .form-group
+              label(for='residence')  
+              input#form-control.residence-text-form(type='text' placeholder=residence''  
+              name='residence' id='residence')
+            br
+            .form-group
+               button.btn-primary(type='submit') submit
+script(src='/js/students.js')
+script(src='/assets/boostrap/js/boostrap.bundle.js')
